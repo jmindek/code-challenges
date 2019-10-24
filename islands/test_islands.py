@@ -40,7 +40,7 @@ def test_1_two_row_island():
 
     assert count_islands(map) == 1
 
-@pytest.mark.skip
+
 def test_2_islands():
     map = [
         [1, 0, 0, 0, 0],
@@ -50,3 +50,25 @@ def test_2_islands():
     ]
 
     assert count_islands(map) == 2
+
+
+def test_3_islands():
+    map = [
+        [1, 0, 0, 0, 0],
+        [0, 0, 1, 1, 0],
+        [0, 0, 1, 0, 0],
+        [0, 0, 0, 0, 1],
+    ]
+
+    assert count_islands(map) == 3
+
+
+def test_1_big_island():
+    map = [
+        [1, 1, 1, 0, 0],
+        [0, 0, 1, 1, 0],
+        [0, 0, 1, 0, 0],
+        [0, 0, 1, 1, 1],
+    ]
+
+    assert count_islands(map) == 1
